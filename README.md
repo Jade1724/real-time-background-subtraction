@@ -3,20 +3,20 @@
 ## Overview
 
 This is real-time backgrund subtraction project using YOLACT instance segmentation and custom mask generation specifically for people with HMD. 
-![original, masked, and background subtracted video frames]("background_subtraction.png")
 
-This project is not complete to get the resulted background subtraction above. Please follow the steps in the next section to setup and run the project.
+![original, masked, and background subtracted video frames](background_subtraction.png)
+
+This project uses YOLACT real-time instance segmentation library and pre-trained model. Please follow the steps in the next section to setup and run the project.
 
 #### Development Environment
 
-Operating System: Linux Mint 20.3
-Kernel: 5.13.0-41-generic
-CPU: Intel i7-10700 (16) @ 4.800GHz
-GPU: NVIDIA GeForce RTX 2060 SUPER, Intel Device
-9bc5
-Memory: Memory: 5341MiB / 31882MiB
-Anaconda version: conda 4.12.0
-OpenCV version: 4.5.5
+- Operating System: Linux Mint 20.3
+- Kernel: 5.13.0-41-generic
+- CPU: Intel i7-10700 (16) @ 4.800GHz
+- GPU: NVIDIA GeForce RTX 2060 SUPER, Intel Device 9bc5
+- Memory: Memory: 5341MiB / 31882MiB
+- Anaconda version: conda 4.12.0
+- OpenCV version: 4.5.5
 
 ## Installing and Running
 
@@ -41,11 +41,15 @@ Copy the `real-time-background-subtraction/requirements.txt` to the root of `yol
 
 Run the following command to create a Anaconda environment with all the dependencies:
 
-```conda create --name yolact-env --file requirements.txt```
+```
+conda create --name yolact-env --file requirements.txt
+```
 
 Once the environment is successfully created, switch to that environment by running:
 
-```conda activate yolact-env```
+```
+conda activate yolact-env
+```
 
 **Step 3. Gathering Scripts and Data**
 
